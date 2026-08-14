@@ -1,13 +1,13 @@
 //alert ("welcome to my website");
 var users = [
     {
-        name:"John Doe", 
-        gender:"male",
+        name:"JOHN DOE", 
+        gender:"MALE",
         image:"image.png",
     },
     {
-        name:"Jane Doe", 
-        gender:"female",
+        name:"JANE DOE", 
+        gender:"FEMALE",
         image:"jane.png",
     }
 ]
