@@ -49,7 +49,32 @@ function randomuser(){
 
         })  
 
-}   
+}  
+function myrandomuser(){
+    fetch("/api/randomuser")
+        .then(function(res){
+            return res.json();
+        })
+        .then (function(data){
+            var username = document.getElementById("user-name");
+            var usergender = document.getElementById("user-gender");
+            var userimage = document.getElementById("user-image");
+
+            var newusername=data.name;
+            var newusergender=data.gender;
+            var newuserimage=data.image;
+
+            username.innerHTML = newusername;
+            usergender.innerHTML = newusergender;
+            userimage.src = newuserimage;
+
+
+        })
+        .catch (function(err){
+            console.log("error occured:"+err);
+
+        })
+}
 
 
         
